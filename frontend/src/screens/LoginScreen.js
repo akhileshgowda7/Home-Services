@@ -23,7 +23,7 @@ const LoginScreen = () => {
         </Form.Group>
 
         <div className="text-center">
-          <Button variant="primary" type="submit">
+          <Button variant="secondary" type="submit" >
             Submit
           </Button>
         </div>
