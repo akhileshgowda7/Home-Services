@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
+import Rating from './Rating';
 
-const service = ({service}) => {
+const Service = ({ service }) => {
   return (
     <Card className="my-3 p-3 rounded">
       <Link to={`/service/${service._id}`}>
@@ -22,9 +23,10 @@ const service = ({service}) => {
           />
         </Card.Text>
         <Card.Text as="h3">${service.price}</Card.Text>
+        <Card.Text as="h3">${service.priceType}</Card.Text>
       </Card.Body>
     </Card>
-  )
-}
+  );
+};
 
-export default service
+export default Service;

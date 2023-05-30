@@ -3,7 +3,8 @@ import HomeScreen from './screens/HomeScreen';
 import Header from './components/Header';
 import LoginScreen from './screens/LoginScreen';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
+
+import ServiceScreen from './screens/ServiceScreen';
 
 function App() {
   return (
@@ -11,11 +12,12 @@ function App() {
       <Header />
       <main className="py-3">
         <Routes>
-          <Route path="/login" element={<LoginScreen />}></Route>
-          <Route path="/" element={<HomeScreen />}></Route>
+          <Route path="/login" element={<LoginScreen />} ></Route>
+          <Route path="/" element={<HomeScreen />} exact></Route>
+          <Route path="/service/:id" element={<ServiceScreen/>} ></Route>
         </Routes>
 
-        <LoginScreen />
+
       </main>
     </Router>
   );

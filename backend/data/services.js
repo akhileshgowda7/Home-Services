@@ -8,6 +8,7 @@ const services = [
       priceType:'Hourly',
       rating: 4.5,
       numReviews: 12,
+      isAvailable:true
     },
     {
       name: 'Carpet Cleaning Services',
@@ -19,6 +20,7 @@ const services = [
       priceType:'Hourly',
       rating: 4.0,
       numReviews: 8,
+      isAvailable:true
     },
     {
       name: 'Plumbing Services',
@@ -30,6 +32,7 @@ const services = [
       priceType:'Hourly',
       rating: 3,
       numReviews: 12,
+      isAvailable:true
     },
     {
       name: 'Gardening Services',
@@ -41,6 +44,7 @@ const services = [
       priceType:'Hourly',
       rating: 5,
       numReviews: 12,
+      isAvailable:true
     },
     {
       name: 'Air Conditioning Services',
@@ -52,6 +56,7 @@ const services = [
       priceType:'Hourly',
       rating: 4,
       numReviews: 12,
+      isAvailable:false
     },
   ];
   
