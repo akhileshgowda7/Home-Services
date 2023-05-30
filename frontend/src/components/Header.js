@@ -20,6 +20,11 @@ const Header = () => {
                   <i className="fas fa-user"></i>Sign In
                 </Nav.Link>
               </LinkContainer>
+              <LinkContainer to="/cart">
+                <Nav.Link>
+                  <i className="fas fa-shopping-cart"></i>Cart
+                </Nav.Link>
+              </LinkContainer>
 
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Profile</NavDropdown.Item>
