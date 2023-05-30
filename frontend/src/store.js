@@ -1,21 +1,12 @@
-import { configureStore,createSlice } from '@reduxjs/toolkit';
-
-const reducerSlice = createSlice({
-  name: 'store',
-  initialState: {},
-  reducers: {
-     someAction: function() {
-
-     }
-  }
-})
+import { configureStore } from '@reduxjs/toolkit';
+import { apiSlice } from './slices/apiSlice';
 
 const store = configureStore({
-  reducer: {
-    someReducer: reducerSlice.reducer,
-  }
-})
+  reducer: { [apiSlice.reducerPath]: apiSlice.reducer },
+  middleware: (getDefaultMiddleware) => {
+    return getDefaultMiddleware().concat(apiSlice.middleware);
+  },
+  devTools: true,
+});
 
 export default store;
-
-

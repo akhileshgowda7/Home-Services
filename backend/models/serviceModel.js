@@ -58,11 +58,16 @@ const serviceSchema = mongoose.Schema(
       required: true,
       default: 0,
     },
-    priceType:{
-        type:String,
-        required:true,
-        default:'hourly'
-    }
+    priceType: {
+      type: String,
+      required: true,
+      default: 'hourly',
+    },
+    isAvailable: {
+      type: Boolean,
+      required: true,
+      default: false,
+    },
   },
   {
     timestamps: true,
