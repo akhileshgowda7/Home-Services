@@ -34,5 +34,22 @@ npm run data:import (to import data from the data folder to mongoDB)
 npm run data:destroy (to delete all data from the mongoDb database)
 
 ```
+## Environment Variable
 
-![Alt text](./frontend//public//images/homePage.png 'Home-Page')
+create a .env folder in the root folder
+```
+NODE_ENV = development
+PORT = 5000
+MONGO_URI = your mongodb uri
+JWT_SECRET = 'abc123'
+PAYPAL_CLIENT_ID = your paypal client id
+```
+
+## Install Dependencies (frontend & backend)
+
+```
+npm ci
+cd frontend
+npm ci
+```
+
